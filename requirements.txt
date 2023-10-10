@@ -1,0 +1,6 @@
+colorama
+cysimdjson
+lxml
+python-dotenv
+python_libnmap
+requests
