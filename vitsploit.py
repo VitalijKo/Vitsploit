@@ -28,4 +28,4 @@ if check_host(target):
 	exscan(target)
 
 else:
-	fail('Invalid IP')
+	fail('Invalid IP.')
