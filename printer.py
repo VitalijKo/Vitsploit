@@ -1,6 +1,6 @@
 import sys
 import string
-from colorama import init, Fore, Back, Style
+from colorama import Back, Fore, Style, init
 
 init()
 
