@@ -18,14 +18,21 @@ def check_host(host):
 	    return True
 
 
-cprint('{byellow}Vit{bred}sploit{rst}\n', mark=None)
+def run():
+	cprint('{byellow}Vit{bred}sploit{rst}\n', mark=None)
 
-target = input('Target IP: ')
+	target = input('Target IP: ')
 
-if check_host(target):
-	ws = WebScan()
-	ws.scan_host(target)
-	exscan(target)
+	if check_host(target):
+		ws = WebScan()
+		ws.scan_host(target)
+		exscan(target)
 
-else:
-	fail('Invalid IP.')
+	else:
+		fail('Invalid IP.')
+
+
+try:
+	run()
+except KeyboardInterrupt:
+	pass
