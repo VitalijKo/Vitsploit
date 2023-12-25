@@ -1,7 +1,10 @@
 import socket
+from colorama import Fore, Style, init
 from webscan import WebScan
 from exscan import exscan
 from printer import cprint, fail
+
+init()
 
 
 def check_host(host):
@@ -21,7 +24,7 @@ def check_host(host):
 def run():
 	cprint('{byellow}Vit{bred}sploit{rst}\n', mark=None)
 
-	target = input('Target IP: ')
+	target = input('{Style.BRIGHT}{Fore.RED}Target IP:{Fore.RESET} ')
 
 	if check_host(target):
 		ws = WebScan()
